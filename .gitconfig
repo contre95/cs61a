@@ -1,0 +1,7 @@
+# Este es el archivo de configuración de Git por usuario.                                                              
+[user]                                                                                                                 
+# Por favor, adapta y descomenta las siguientes líneas:                                                                
+        name = Lucas Contreras
+        email = lucascontre95@gmail.com
+;[url "git@github.com:"]                                                                                                
+        ;insteadOf = https://github.com/
