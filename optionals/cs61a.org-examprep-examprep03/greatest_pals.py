@@ -13,7 +13,7 @@ def greatest_pal(s):
     'tenet'
     >>> greatest_pal("stennet")
     'tennet'
-    >>> greatest_pal("racecars")
+    >>> greatest_pal("25 racecars")
     'racecar'
     >>> greatest_pal("abc")
     'a'
@@ -22,10 +22,10 @@ def greatest_pal(s):
     """
     if is_palindrome(s):
         return s
-    left, right = s[1:], s[:-1]
-    if greatest_pal(left) == left:
+    left, right = s[:-1], s[1:]
+    if is_palindrome(left) or len(left)==2:
         return greatest_pal(left)
-    return greatest_pal(left)
+    return greatest_pal(right)
 
 # def greatest_pal(s):
     # """
